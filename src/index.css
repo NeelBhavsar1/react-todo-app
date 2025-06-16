@@ -1,23 +1,28 @@
 html, body {
   background: linear-gradient(135deg, #1f1c2c, #928dab);
   background-attachment: fixed;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
-  overflow: hidden; /*scrolling func of*/
+
+  
 }
 
 .todo-container {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
-  margin: 200px auto;
+  margin: 100px auto;
   padding: 30px 60px;
   border: 2px solid black;
   border-radius: 14px;
-  width: fit-content;
+  width: 90%;
+  max-width: 500px;
+  box-sizing: border-box;
 
   background: linear-gradient(135deg, #2e2e48, #4b3f72);
 
   transition: transform 0.5s ease;
+
+  
 }
 
 .todo-container:hover {
@@ -91,7 +96,7 @@ html, body {
 
 .delete-btn {
   background-color: #e74c3c;
-  padding: 8px 20px;
+  padding: 8px 10px;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.2); 
   font-size: 1rem;
@@ -107,7 +112,7 @@ html, body {
 
 
 .move-btn {
-  padding: 8px 10px;
+  padding: 6px 8px;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   cursor: pointer;
@@ -125,4 +130,46 @@ html, body {
 }
 
 
+.edit-btn {
+  padding: 6px 8px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  background-color: #f39c12;
+  font-size: 1rem;
 
+  transition: transform 0.3s ease, background-color 0.3s ease;
+
+}
+
+.edit-btn:hover {
+
+  transform: scale(1.1);
+  background-color: #d68910;
+}
+
+
+.task-list li input[type="text"] {
+    flex-grow: 1;
+  height: 36px;
+  font-size: 1rem;
+  border: 1.5px solid black;
+  border-radius: 12px;
+  padding: 0 12px;
+  margin-right: 10px;
+}
+
+.task-list li .form-btn {
+  padding: 6px 10px;
+  font-size: 0.9rem;
+  border-radius: 10px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.task-list li .form-btn:hover {
+  background-color: #8c46a8;
+  color: white;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
