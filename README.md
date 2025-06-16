@@ -8,7 +8,6 @@ Create a to do list tracker allowing users to add, delete, and move tasks up and
 - Edit existing tasks
 - Delete tasks
 - Move tasks up and down in the list
-- Responsive design for mobile and desktop
 - Smooth animations and hover effects
 
 ## Technologies Used
